@@ -114,7 +114,7 @@ end)
 
 getgenv().VelocityChanger = false
 getgenv().Velocity = Vector3.new(200,700,200)
-getgenv().KeyBind = "z"
+getgenv().KeyBind = "x"
 
 local Players     = game:GetService("Players")
 local RunService  = game:GetService("RunService")
