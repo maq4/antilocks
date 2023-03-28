@@ -144,7 +144,7 @@ function sendnotifi(message)
  end
 
  UIS.InputBegan:Connect(function(input)
-     if input.KeyCode == Enum.KeyCode.Z then
+     if input.KeyCode == Enum.KeyCode.X then
          if VelocityChanger == false then
              sendnotifi("Anti-Lock Disabled")
          elseif VelocityChanger == true then
