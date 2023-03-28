@@ -7,7 +7,7 @@ if game.Players.LocalPlayer:IsInGroup(15084832) then
  })
 _G.enable = false
 _G.color = Color3.fromRGB(0,73,255)
-_G.toggle_keybind = "z"
+_G.toggle_keybind = "p"
 _G.swith_nigga = 't' 
 _G.method = "MousePos"
 
@@ -144,7 +144,7 @@ function sendnotifi(message)
  end
 
  UIS.InputBegan:Connect(function(input)
-     if input.KeyCode == Enum.KeyCode.X then
+     if input.KeyCode == Enum.KeyCode.Z then
          if VelocityChanger == false then
              sendnotifi("Anti-Lock Disabled")
          elseif VelocityChanger == true then
@@ -157,7 +157,7 @@ function sendnotifi(message)
 
 UIS.InputBegan:Connect(function(input)
 if not (UIS:GetFocusedTextBox()) then
- if input.KeyCode == Enum.KeyCode.X then
+ if input.KeyCode == Enum.KeyCode.Z then
      if VelocityChanger then
          VelocityChanger = false
      else
@@ -183,4 +183,5 @@ if not (UIS:GetFocusedTextBox()) then
      end
  end
 end)
-end
+
+
